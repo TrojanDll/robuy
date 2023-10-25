@@ -1,0 +1,58 @@
+.modal__review {
+    min-height: 567px;
+    & .modal__review__title::before {
+        display: none;
+    }
+
+    & .modal__review__form {
+        margin-top: 32px;
+
+        & .modal__review__stars {
+            display: flex;
+            justify-content: space-between;
+            width: 136px;
+            margin-top: 24px;
+
+            & .modal__review__stars-img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        & .modal__review__form__input::-webkit-input-placeholder {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        & .modal__review__form__input__review-text {
+            margin-top: 24px;
+            width: 100%;
+            min-height: 180px;
+        }
+
+        & .modal__review__submit-btn {
+            margin-top: 32px;
+            width: 276px;
+        }
+    }
+}
+
+@media (max-width: 707px) {
+    .modal__review {
+        width: calc(100% - 32px);
+    }
+}
+
+@media (max-width: 408px) {
+    .modal__review {
+        & .modal__review__form {
+            & .modal__review__form__input {
+                width: 100%;
+            }
+
+            & .modal__review__submit-btn {
+                width: 100%;
+            }
+        }
+    }
+}

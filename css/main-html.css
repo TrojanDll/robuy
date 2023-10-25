@@ -1,0 +1,32 @@
+@import url("libs/fonts.css");
+
+body {
+    /* background-color: #252422; */
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: #393e46;
+    border-radius: 16px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #00adb5;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+h1 {
+    text-align: center;
+    color: #f24b4b;
+}
+
+h2 {
+    text-align: center;
+    color: #f24b4b;
+}

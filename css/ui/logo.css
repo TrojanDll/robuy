@@ -1,0 +1,16 @@
+.logo {
+    width: 67px;
+    height: 19px;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 19px;
+    background-image: url("../../icons/logo-img.svg");
+}

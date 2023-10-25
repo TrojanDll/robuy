@@ -1,0 +1,41 @@
+@import url("../../../css/style.css");
+
+@import url("../../../css/variables.css");
+@import url("../../../css/animations.css");
+
+/*Libs*/
+@import url("../../../css/libs/fonts.css");
+
+/* UI */
+@import url("../../../css/ui/rainbow-wrapper.css");
+@import url("../../../css/ui/button.css");
+@import url("../../../css/ui/logo.css");
+@import url("../../../css/ui/game-card.css");
+@import url("../../../css/ui/comment.css");
+@import url("../../../css/ui/box-with-corners.css");
+@import url("../../../css/ui/advantage-card.css");
+@import url("../../../css/ui/trustpilot.css");
+@import url("../../../css/ui/reviews-mini.css");
+@import url("../../../css/ui/questions.css");
+@import url("../../../css/ui/h2-title.css");
+@import url("../../../css/ui/latest-buy.css");
+@import url("../../../css/ui/footer.css");
+@import url("../../../css/ui/header.css");
+@import url("../../../css/ui/overlay.css");
+@import url("../../../css/ui/modal.css");
+@import url("../../../css/ui/modal-signin.css");
+@import url("../../../css/ui/modal-promocode.css");
+@import url("../../../css/ui/modal-registration.css");
+@import url("../../../css/ui/modal-review.css");
+@import url("../../../css/ui/modal-dashboard.css");
+@import url("../../../css/ui/wave-for-button.css");
+@import url("../../../css/ui/all-effected-buttons.css");
+
+/* from currient page */
+@import url("goods-grid.css");
+@import url("advice.css");
+@import url("advantages.css");
+@import url("reviews-mini.css");
+@import url("questions.css");
+@import url("latest-buy.css");
+@import url("footer.css");

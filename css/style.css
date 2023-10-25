@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--lightest-gray-color);
+    margin: 0 auto;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 675px;
+}
+
+@media (max-width: 707px) {
+    .container {
+        width: calc(100% - 32px);
+    }
+}
+
+/* @media (max-width: 680px) {
+    .container {
+        width: 360px;
+    }
+}
+
+@media (max-width: 392px) {
+    .container {
+        width: 288px;
+    }
+} */

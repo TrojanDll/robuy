@@ -1,0 +1,8 @@
+.questions {
+    margin-top: 64px;
+    min-height: 658px;
+
+    & .questions__faq {
+        margin-top: 24px;
+    }
+}

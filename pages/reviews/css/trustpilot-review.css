@@ -1,0 +1,39 @@
+.trustpilot-review {
+    margin-top: 48px;
+
+    & .reviews-mini-ui__trustpilot {
+        width: 292px;
+        height: 70px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        & .trustpilot__logo {
+            width: 140px;
+            height: 34px;
+        }
+    }
+
+    & .latest-buy-ui__review {
+        margin-top: 30px;
+        & .latest-buy-ui__review__descr {
+            margin-top: 8px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .trustpilot-review {
+        & .reviews-mini-ui__trustpilot {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .trustpilot-review {
+        & .reviews-mini-ui__trustpilot {
+            display: none;
+        }
+    }
+}

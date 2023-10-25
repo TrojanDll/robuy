@@ -1,0 +1,10 @@
+.instruction {
+    min-height: 603px;
+    margin-top: 64px;
+
+    & .instruction__title::before {
+        width: 16px;
+        height: 16px;
+        background-image: url("../../../icons/exclamation.svg");
+    }
+}

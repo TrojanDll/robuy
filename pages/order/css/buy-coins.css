@@ -1,0 +1,19 @@
+.buy-coins {
+    margin-top: 64px;
+
+    & .buy-coins__discount {
+        margin-top: 32px;
+    }
+
+    & .buy-coins__platform {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 752px) {
+    .buy-coins {
+        & .rainbow-wrapper {
+            background: inherit;
+        }
+    }
+}

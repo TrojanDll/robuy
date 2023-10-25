@@ -1,0 +1,22 @@
+.advantages {
+    margin-top: 64px;
+    min-height: 585px;
+
+    & .advantages__list {
+        margin-top: 24px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    & .advantages__title::before {
+        width: 16px;
+        height: 14px;
+        background-image: url("../../../icons/trophy.svg");
+    }
+
+    & .advantage-card_small {
+        margin-top: 16px;
+    }
+}

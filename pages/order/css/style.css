@@ -1,0 +1,45 @@
+@import url("../../../css/style.css");
+
+@import url("../../../css/variables.css");
+
+/*Libs*/
+@import url("../../../css/libs/fonts.css");
+
+/* UI */
+@import url("../../../css/ui/rainbow-wrapper.css");
+@import url("../../../css/ui/button.css");
+@import url("../../../css/ui/logo.css");
+@import url("../../../css/ui/box-with-corners.css");
+@import url("../../../css/ui/trustpilot.css");
+@import url("../../../css/ui/reviews-mini.css");
+@import url("../../../css/ui/questions.css");
+@import url("../../../css/ui/h2-title.css");
+@import url("../../../css/ui/latest-buy.css");
+@import url("../../../css/ui/footer.css");
+@import url("../../../css/ui/header.css");
+@import url("../../../css/ui/advertising.css");
+@import url("../../../css/ui/discount.css");
+@import url("../../../css/ui/instruction.css");
+@import url("../../../css/ui/modal.css");
+@import url("../../../css/ui/modal-user-data.css");
+@import url("../../../css/ui/overlay.css");
+@import url("../../../css/ui/modal-payment-methods.css");
+@import url("../../../css/ui/modal-purchase-amount.css");
+@import url("../../../css/ui/modal-dashboard.css");
+@import url("../../../css/ui/modal-promocode.css");
+@import url("../../../css/ui/modal-registration.css");
+@import url("../../../css/ui/modal-review.css");
+@import url("../../../css/ui/modal-signin.css");
+@import url("../../../css/ui/modal-user-data.css");
+@import url("../../../css/ui/platform.css");
+@import url("../../../css/ui/modal-current-purchase.css");
+@import url("../../../css/ui/wave-for-button.css");
+@import url("../../../css/ui/all-effected-buttons.css");
+
+/* from currient page */
+@import url("buy-coins.css");
+@import url("instruction.css");
+@import url("questions.css");
+@import url("reviews-mini.css");
+@import url("latest-buy.css");
+@import url("footer.css");

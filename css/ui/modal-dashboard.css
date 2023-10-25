@@ -1,0 +1,195 @@
+.modal__dashboard {
+    min-height: 436px;
+
+    & .modal__dashboard__title::before {
+        display: none;
+    }
+
+    & .modal__dashboard__profile-info {
+        position: relative;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+
+        & .modal__dashboard__profile-info__img {
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+        }
+
+        & .modal__dashboard__profile-info__text {
+            margin-left: 16px;
+
+            & .modal__dashboard__profile-info__text-login {
+                color: var(--dark-color);
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+
+            & .modal__dashboard__profile-info__text-email {
+                margin-top: 3px;
+                color: var(--light-gray-for-text);
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 15px;
+            }
+        }
+
+        & .modal__dashboard__profile-info__log-out-img {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+
+    & .modal__dashboard__form {
+        margin-top: 32px;
+
+        & .modal__dashboard__next-button {
+            margin-left: 16px;
+            width: 160px;
+            font-size: 14px;
+            font-weight: 500;
+            height: 48px;
+        }
+
+        & .modal__dashboard__form__input {
+            width: 313px;
+        }
+
+        & .modal__dashboard__form__input::-webkit-input-placeholder {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    & .modal__dashboard__my-purchases {
+        margin-top: 64px;
+
+        & .modal__dashboard__my-purchases__title {
+            color: var(--dark-color);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+        }
+
+        & .modal__dashboard__my-purchases__list {
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            cursor: pointer;
+
+            & .modal__dashboard__my-purchases__list__item {
+                margin-top: 16px;
+                width: 220px;
+                display: flex;
+                align-items: center;
+
+                & .modal__dashboard__my-purchases__list__item-img {
+                    width: 32px;
+                    height: 32px;
+                    pointer-events: none;
+                }
+
+                & .modal__dashboard__my-purchases__list__item-number {
+                    margin-left: 8px;
+                    color: var(--dark-color);
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 14px;
+                    pointer-events: none;
+                }
+
+                & .modal__dashboard__my-purchases__list__item-status {
+                    margin-left: 8px;
+                    padding: 4px 8px;
+                    display: inline;
+                    height: 23px;
+                    border-radius: 16px;
+                    background: linear-gradient(
+                        61deg,
+                        #a6c0fe 0%,
+                        #f68084 100%
+                    );
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .modal__dashboard {
+        /* width: 500px; */
+        /* top: 60%; */
+
+        & .modal__dashboard__form {
+            display: flex;
+            flex-wrap: wrap;
+
+            & .modal__dashboard__next-button {
+                margin-left: 0;
+                margin-top: 16px;
+                width: 313px;
+            }
+        }
+
+        & .modal__dashboard__my-purchases {
+            & .modal__dashboard__my-purchases__list {
+                width: 220px;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .modal__dashboard {
+        /* width: 345px; */
+
+        & .modal__dashboard__form {
+            & .modal__dashboard__next-button {
+                margin-left: 0;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 409px) {
+    .modal__dashboard {
+        & .modal__dashboard__form {
+            & .modal__dashboard__form__input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 392px) {
+    .modal__dashboard {
+        /* width: 288px; */
+        /*70%; */
+
+        & .modal__dashboard__profile-info {
+            & .modal__dashboard__profile-info__log-out-img {
+                top: 0;
+            }
+        }
+
+        & .modal__dashboard__form {
+            & .modal__dashboard__form__input {
+                width: 100%;
+            }
+
+            & .modal__dashboard__next-button {
+                width: 100%;
+            }
+        }
+    }
+}

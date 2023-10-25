@@ -1,0 +1,191 @@
+.platform-ui {
+    width: 100%;
+    min-height: 341px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 4px 16px 0px #ddd;
+    padding: 32px;
+
+    & .platform-ui__benefits {
+        display: flex;
+        width: 555px;
+
+        & .platform-ui__benefits-item {
+            display: flex;
+            align-items: center;
+            padding: 6px 12px;
+            height: 31px;
+            border-radius: 16px;
+            background: rgba(111, 44, 255, 0.1);
+
+            & .platform-ui__benefits-item-img {
+                width: 16px;
+                height: 16px;
+            }
+
+            & .platform-ui__benefits-item-text {
+                margin-left: 6px;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 16px;
+            }
+        }
+
+        & .platform-ui__benefits-item:first-child {
+            & .platform-ui__benefits-item-text {
+                color: #6f2cff;
+            }
+        }
+
+        & .platform-ui__benefits-item:last-child {
+            margin-left: 8px;
+            & .platform-ui__benefits-item-text {
+                color: #8d00d0;
+            }
+        }
+    }
+
+    & .platform-ui__list {
+        margin-top: 36px;
+        display: flex;
+
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & .platform-ui__list__item {
+            cursor: pointer;
+            width: 282px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            background: #fff;
+
+            & .platform-ui__list__item__wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            & .platform-ui__list__item-title {
+                margin-left: 8px;
+                color: var(--dark-color);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            & .platform-ui__list__item-price {
+                height: 23px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                background: rgba(111, 44, 255, 0.1);
+                color: #6f2cff;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 14px;
+            }
+        }
+
+        & .platform-ui__list__item:hover {
+            border-color: rgba(13, 110, 253, 0.3);
+        }
+
+        & .platform-ui__list__item:nth-child(n + 3) {
+            margin-top: 16px;
+        }
+    }
+
+    & .platform-ui__next-block {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+
+        & .platform-ui__next-block__button {
+            line-height: 16px;
+        }
+
+        & .platform-ui__next-block__descr {
+            color: var(--light-gray-for-text);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            margin-left: 16px;
+        }
+    }
+}
+
+@media (max-width: 707px) {
+    .platform-ui {
+        & .platform-ui__benefits-wrapper {
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        & .platform-ui__list {
+            width: 100%;
+            & .platform-ui__list__item:nth-child(n + 3) {
+                margin-top: 0;
+            }
+
+            & .platform-ui__list__item:nth-child(n + 2) {
+                margin-top: 16px;
+            }
+
+            & .platform-ui__list__item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .platform-ui {
+        & .platform-ui__next-block {
+            flex-wrap: wrap;
+            & .platform-ui__next-block__button {
+                width: 297px;
+                text-align: center;
+            }
+
+            & .platform-ui__next-block__descr {
+                margin: 0;
+                margin-top: 11px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width: 392px) {
+    .platform-ui {
+        & .platform-ui__list {
+            & .platform-ui__list__item {
+                & .platform-ui__list__item-price {
+                    padding: 4px 4px;
+                }
+            }
+        }
+
+        & .platform-ui__benefits {
+            width: 500px;
+            & .platform-ui__benefits-item {
+                & .platform-ui__benefits-item-text {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+
+            & .platform-ui__benefits-item:last-child {
+                margin-left: 4px;
+            }
+        }
+    }
+}

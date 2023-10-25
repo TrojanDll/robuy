@@ -1,0 +1,11 @@
+.reviews-mini {
+    margin-top: 64px;
+
+    & .reviews-mini-ui__slider {
+        min-height: 194px;
+    }
+
+    & .reviews-mini__wrapper {
+        margin-top: 24px;
+    }
+}

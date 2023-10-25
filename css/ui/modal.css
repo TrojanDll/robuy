@@ -1,0 +1,112 @@
+.modal {
+    display: none;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 675px;
+    padding: 32px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 4px 16px 0px #ddd;
+
+    & .modal__title {
+        display: flex;
+        color: var(--dark-color);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    & .modal__title::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        background-image: url("../../icons/arrow-left.svg");
+    }
+
+    & .modal__descr {
+        margin-top: 8px;
+        color: var(--light-gray-for-text);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    & .modal__close {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-image: url("../../img/pieces/modal-close.svg");
+        right: 33px;
+        top: 33px;
+        cursor: pointer;
+    }
+
+    & .modal__input {
+        margin-top: 8px;
+        outline: none;
+        height: 56px;
+        border-radius: 12px;
+        background: #f2f4f5;
+        border: none;
+        color: var(--light-gray-for-text);
+        padding: 16px;
+        color: var(--dark-color);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    & .modal__input::-webkit-input-placeholder {
+        color: var(--light-gray-for-text);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+}
+
+.modal_display-block {
+    display: block;
+}
+
+.modal__wrapper {
+    /* overflow: scroll; */
+}
+
+@media (max-width: 707px) {
+    .modal {
+        top: 50px;
+        transform: translate(-50%, 0);
+        width: calc(100% - 32px);
+    }
+}
+
+@media (max-width: 680px) {
+    .modal {
+        & .modal__title {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 392px) {
+    .modal {
+        & .modal__title {
+            margin-top: 8px;
+        }
+        & .modal__close {
+            right: 20px;
+            top: 20px;
+        }
+
+        & .modal__title::before {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    }
+}

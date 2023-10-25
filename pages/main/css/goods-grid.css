@@ -1,0 +1,114 @@
+.goods {
+    min-height: 200px;
+}
+
+.goods__grid {
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.game-card:nth-child(n + 5) {
+    margin-top: 24px;
+}
+
+.game-card {
+    margin-left: 17px;
+}
+
+/* .game-card:first-child {
+    margin-left: 0;
+} */
+
+.game-card:nth-child(4n + 1) {
+    margin-left: 0;
+}
+
+@media (max-width: 750px) {
+    .goods {
+        min-height: 200px;
+    }
+
+    .goods__grid {
+        min-height: 200px;
+    }
+
+    .game-card {
+        margin-left: 16px;
+    }
+
+    .game-card:nth-child(4n + 1) {
+        margin-left: 0;
+    }
+
+    .game-card:nth-child(3n + 1) {
+        margin-left: 16px;
+    }
+
+    .game-card:first-child {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 610px) {
+    .goods__grid-item:nth-child(n + 4) {
+        margin-top: 16px;
+    }
+
+    .game-card {
+        margin-left: 12px;
+    }
+
+    .game-card:nth-child(3n + 1) {
+        margin-left: 0;
+    }
+
+    .game-card:nth-child(4n + 1) {
+        margin-left: 12px;
+        margin-top: 16px;
+    }
+
+    /* .game-card:nth-child(2n + 1) {
+        margin-left: 12px;
+    } */
+
+    /* .game-card:nth-child(n + 3) {
+        margin-top: 0;
+    } */
+
+    .game-card:first-child {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    .game-card {
+        margin-left: 16px;
+    }
+
+    .goods__grid-item:nth-child(n + 4) {
+        margin-top: 0;
+    }
+
+    .goods__grid-item:nth-child(n + 3) {
+        margin-top: 16px;
+    }
+
+    .game-card:nth-child(2n) {
+        margin-left: 16px;
+        margin-top: 16px;
+    }
+
+    .game-card:nth-child(2n + 1) {
+        margin-left: 0;
+    }
+
+    .game-card:nth-child(2) {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,10 @@
+.advice {
+    min-height: 140px;
+    margin-top: 55px;
+}
+
+@media (max-width: 680px) {
+    .advice {
+        min-height: 210px;
+    }
+}

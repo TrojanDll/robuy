@@ -1,0 +1,11 @@
+@keyframes green-point-glow {
+    from {
+        background-color: rgba(17, 208, 0, 0);
+    }
+    50% {
+        background-color: rgba(17, 208, 0, 0.3);
+    }
+    to {
+        background-color: rgba(17, 208, 0, 0);
+    }
+}

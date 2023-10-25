@@ -1,0 +1,57 @@
+.modal__promocode {
+    width: 340px;
+    min-height: 406px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    & .modal__promocode__form {
+        margin-top: 32px;
+
+        & .modal__promocode__form__input {
+            width: 100%;
+            height: 56px;
+        }
+
+        & .modal__promocode__form__input::-webkit-input-placeholder {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    & .modal__promocode__title::before {
+        display: none;
+    }
+
+    & .modal__promocode__next-button {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    & .modal__no-promo {
+        padding: 24px 32px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 171px;
+        margin-top: 32px;
+        background-color: var(--lightest-gray-color);
+        border-radius: 0 0 16px 16px;
+
+        & .modal__no-promo__title {
+            color: var(--dark-color);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+        }
+
+        & .modal__no-promo__descr {
+            margin-top: 16px;
+            color: var(--light-gray-for-text);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 160.023%; /* 22.403px */
+        }
+    }
+}
